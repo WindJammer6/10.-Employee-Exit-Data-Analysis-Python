@@ -724,4 +724,4 @@ To be improved:
 
 Have a gif:
 
-![Semantic description of image](https://media.tenor.com/MUGoopVvqDQAAAAd/cat.gif)
+![Semantic description of image](https://media0.giphy.com/media/l4KibK3JwaVo0CjDO/200.webp?cid=ecf05e47r4gqnxqenqjxnqy3gwrzfmasouh2iglayhepxcfx&rid=200.webp&ct=g)
