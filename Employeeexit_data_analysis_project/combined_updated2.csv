@@ -1,0 +1,557 @@
+id,separationtype,gender,age,institute_service,dissatisfied,institute,service_cat
+4.0,Resignation-Other reasons,Female,36-40,7.0,False,DETE,Established
+6.0,Resignation-Other reasons,Female,41-45,18.0,True,DETE,Veteran
+9.0,Resignation-Other reasons,Female,31-35,3.0,False,DETE,Experienced
+10.0,Resignation-Other employer,Female,46-50,15.0,True,DETE,Veteran
+12.0,Resignation-Move overseas/interstate,Male,31-35,3.0,False,DETE,Experienced
+13.0,Resignation-Other reasons,Female,36-40,14.0,False,DETE,Veteran
+15.0,Resignation-Other employer,Male,31-35,5.0,True,DETE,Experienced
+21.0,Resignation-Other employer,Male,56-60,30.0,False,DETE,Veteran
+22.0,Resignation-Other reasons,Female,51-55,32.0,False,DETE,Veteran
+23.0,Resignation-Other reasons,Female,46-50,15.0,True,DETE,Veteran
+24.0,Resignation-Other reasons,Female,61 or older,39.0,True,DETE,Veteran
+26.0,Resignation-Other reasons,Female,41-45,17.0,True,DETE,Veteran
+28.0,Resignation-Other employer,Female,21-25,7.0,False,DETE,Established
+34.0,Resignation-Other reasons,Male,36-40,9.0,True,DETE,Established
+35.0,Resignation-Other reasons,Male,61 or older,6.0,True,DETE,Experienced
+38.0,Resignation-Other reasons,Female,21-25,1.0,False,DETE,New
+41.0,Resignation-Other employer,Male,56-60,35.0,False,DETE,Veteran
+42.0,Resignation-Other reasons,Female,51-55,38.0,True,DETE,Veteran
+43.0,Resignation-Move overseas/interstate,Female,41-45,1.0,False,DETE,New
+44.0,Resignation-Other reasons,Male,51-55,36.0,True,DETE,Veteran
+49.0,Resignation-Move overseas/interstate,Male,21-25,3.0,False,DETE,Experienced
+51.0,Resignation-Move overseas/interstate,Male,21-25,3.0,False,DETE,Experienced
+52.0,Resignation-Other reasons,Female,61 or older,19.0,False,DETE,Veteran
+56.0,Resignation-Other employer,Female,26-30,4.0,False,DETE,Experienced
+58.0,Resignation-Other employer,Male,46-50,9.0,False,DETE,Established
+62.0,Resignation-Other reasons,Female,31-35,1.0,False,DETE,New
+70.0,Resignation-Other reasons,Female,36-40,6.0,True,DETE,Experienced
+72.0,Resignation-Other reasons,Female,36-40,1.0,False,DETE,New
+88.0,Resignation-Move overseas/interstate,Female,26-30,5.0,False,DETE,Experienced
+91.0,Resignation-Other employer,Female,41-45,26.0,False,DETE,Veteran
+94.0,Resignation-Move overseas/interstate,Female,41-45,10.0,True,DETE,Established
+100.0,Resignation-Move overseas/interstate,Male,31-35,1.0,True,DETE,New
+101.0,Resignation-Other reasons,Female,36-40,6.0,True,DETE,Experienced
+103.0,Resignation-Other reasons,Female,51-55,10.0,False,DETE,Established
+104.0,Resignation-Other reasons,Female,51-55,8.0,True,DETE,Established
+109.0,Resignation-Other reasons,Female,31-35,4.0,False,DETE,Experienced
+112.0,Resignation-Other reasons,Female,26-30,8.0,False,DETE,Established
+113.0,Resignation-Other reasons,Female,56-60,5.0,True,DETE,Experienced
+115.0,Resignation-Move overseas/interstate,Female,41-45,15.0,True,DETE,Veteran
+117.0,Resignation-Other reasons,Male,56-60,36.0,True,DETE,Veteran
+119.0,Resignation-Other employer,Female,46-50,2.0,True,DETE,New
+125.0,Resignation-Other employer,Female,36-40,0.0,True,DETE,New
+127.0,Resignation-Other reasons,Male,51-55,32.0,True,DETE,Veteran
+131.0,Resignation-Other employer,Male,51-55,0.0,True,DETE,New
+133.0,Resignation-Other reasons,Female,41-45,5.0,True,DETE,Experienced
+136.0,Resignation-Other reasons,Female,56-60,18.0,True,DETE,Veteran
+139.0,Resignation-Other employer,Female,41-45,8.0,False,DETE,Established
+146.0,Resignation-Other reasons,Male,61 or older,5.0,False,DETE,Experienced
+148.0,Resignation-Other employer,Male,26-30,9.0,True,DETE,Established
+159.0,Resignation-Other employer,Male,21-25,1.0,False,DETE,New
+161.0,Resignation-Other reasons,Female,41-45,9.0,True,DETE,Established
+165.0,Resignation-Other employer,Female,41-45,7.0,True,DETE,Established
+180.0,Resignation-Other reasons,Female,36-40,0.0,True,DETE,New
+184.0,Resignation-Other reasons,Female,61 or older,14.0,True,DETE,Veteran
+186.0,Resignation-Other reasons,Female,31-35,7.0,True,DETE,Established
+190.0,Resignation-Other employer,Female,41-45,6.0,True,DETE,Experienced
+193.0,Resignation-Other reasons,Female,46-50,17.0,False,DETE,Veteran
+196.0,Resignation-Other employer,Female,46-50,23.0,False,DETE,Veteran
+198.0,Resignation-Other employer,Female,31-35,7.0,True,DETE,Established
+205.0,Resignation-Other employer,Female,21-25,4.0,False,DETE,Experienced
+206.0,Resignation-Other reasons,Female,36-40,6.0,True,DETE,Experienced
+211.0,Resignation-Move overseas/interstate,Female,51-55,5.0,False,DETE,Experienced
+213.0,Resignation-Other reasons,Male,61 or older,26.0,True,DETE,Veteran
+225.0,Resignation-Other reasons,Female,36-40,3.0,True,DETE,Experienced
+229.0,Resignation-Other reasons,Male,56-60,18.0,True,DETE,Veteran
+236.0,Resignation-Move overseas/interstate,Female,21-25,3.0,False,DETE,Experienced
+248.0,Resignation-Move overseas/interstate,Female,26-30,6.0,False,DETE,Experienced
+249.0,Resignation-Move overseas/interstate,Male,31-35,1.0,False,DETE,New
+251.0,Resignation-Other reasons,Male,26-30,7.0,True,DETE,Established
+255.0,Resignation-Other reasons,Female,31-35,12.0,True,DETE,Veteran
+256.0,Resignation-Other employer,Female,46-50,4.0,True,DETE,Experienced
+257.0,Resignation-Move overseas/interstate,Female,46-50,7.0,True,DETE,Established
+258.0,Resignation-Other reasons,Female,21-25,0.0,False,DETE,New
+259.0,Resignation-Other employer,Female,26-30,5.0,True,DETE,Experienced
+260.0,Resignation-Move overseas/interstate,Male,41-45,4.0,True,DETE,Experienced
+263.0,Resignation-Move overseas/interstate,Male,36-40,2.0,True,DETE,New
+264.0,Resignation-Move overseas/interstate,Female,21-25,4.0,False,DETE,Experienced
+265.0,Resignation-Other reasons,Female,20 or younger,1.0,False,DETE,New
+268.0,Resignation-Other employer,Female,36-40,1.0,False,DETE,New
+269.0,Resignation-Move overseas/interstate,Female,31-35,1.0,False,DETE,New
+270.0,Resignation-Other reasons,Female,26-30,2.0,False,DETE,New
+274.0,Resignation-Other reasons,Female,56-60,21.0,False,DETE,Veteran
+275.0,Resignation-Other employer,Female,36-40,2.0,False,DETE,New
+280.0,Resignation-Other reasons,Female,61 or older,20.0,True,DETE,Veteran
+284.0,Resignation-Other employer,Female,26-30,5.0,True,DETE,Experienced
+285.0,Resignation-Other employer,Female,31-35,5.0,True,DETE,Experienced
+287.0,Resignation-Other employer,Female,36-40,0.0,False,DETE,New
+296.0,Resignation-Move overseas/interstate,Female,51-55,32.0,True,DETE,Veteran
+297.0,Resignation-Other employer,Male,41-45,6.0,False,DETE,Experienced
+301.0,Resignation-Move overseas/interstate,Female,51-55,16.0,True,DETE,Veteran
+304.0,Resignation-Other reasons,Male,51-55,7.0,True,DETE,Established
+305.0,Resignation-Other employer,Male,46-50,4.0,False,DETE,Experienced
+312.0,Resignation-Other employer,Male,36-40,12.0,True,DETE,Veteran
+313.0,Resignation-Other reasons,Female,36-40,14.0,True,DETE,Veteran
+315.0,Resignation-Other employer,Female,36-40,12.0,False,DETE,Veteran
+318.0,Resignation-Other employer,Male,41-45,23.0,False,DETE,Veteran
+319.0,Resignation-Other reasons,Female,46-50,0.0,True,DETE,New
+321.0,Resignation-Other reasons,Female,26-30,1.0,True,DETE,New
+323.0,Resignation-Other employer,Male,26-30,6.0,True,DETE,Experienced
+325.0,Resignation-Other reasons,Female,21-25,1.0,False,DETE,New
+326.0,Resignation-Other employer,Female,46-50,12.0,False,DETE,Veteran
+327.0,Resignation-Other reasons,Female,36-40,4.0,False,DETE,Experienced
+333.0,Resignation-Other reasons,Female,21-25,1.0,True,DETE,New
+334.0,Resignation-Other employer,Female,51-55,0.0,True,DETE,New
+341.0,Resignation-Other reasons,Male,26-30,8.0,True,DETE,Established
+346.0,Resignation-Other employer,Female,41-45,24.0,True,DETE,Veteran
+348.0,Resignation-Other employer,Female,36-40,4.0,False,DETE,Experienced
+349.0,Resignation-Other reasons,Male,56-60,33.0,True,DETE,Veteran
+355.0,Resignation-Other employer,Male,26-30,6.0,True,DETE,Experienced
+356.0,Resignation-Other reasons,Female,56-60,21.0,False,DETE,Veteran
+357.0,Resignation-Move overseas/interstate,Female,31-35,10.0,False,DETE,Established
+367.0,Resignation-Move overseas/interstate,Male,21-25,3.0,True,DETE,Experienced
+368.0,Resignation-Move overseas/interstate,Female,21-25,1.0,True,DETE,New
+372.0,Resignation-Other reasons,Female,36-40,0.0,False,DETE,New
+375.0,Resignation-Other employer,Female,41-45,20.0,False,DETE,Veteran
+376.0,Resignation-Other reasons,Female,46-50,13.0,True,DETE,Veteran
+377.0,Resignation-Move overseas/interstate,Female,46-50,5.0,False,DETE,Experienced
+378.0,Resignation-Other employer,Female,46-50,22.0,True,DETE,Veteran
+382.0,Resignation-Other employer,Female,26-30,5.0,True,DETE,Experienced
+384.0,Resignation-Move overseas/interstate,Female,56-60,18.0,False,DETE,Veteran
+389.0,Resignation-Move overseas/interstate,Female,46-50,6.0,False,DETE,Experienced
+390.0,Resignation-Other employer,Female,46-50,28.0,True,DETE,Veteran
+391.0,Resignation-Other employer,Female,46-50,13.0,False,DETE,Veteran
+392.0,Resignation-Other employer,Female,31-35,5.0,True,DETE,Experienced
+399.0,Resignation-Other reasons,Female,41-45,19.0,True,DETE,Veteran
+407.0,Resignation-Other reasons,Female,56-60,22.0,True,DETE,Veteran
+409.0,Resignation-Other reasons,Female,26-30,6.0,True,DETE,Experienced
+411.0,Resignation-Other reasons,Female,26-30,5.0,False,DETE,Experienced
+413.0,Resignation-Other reasons,Female,41-45,5.0,False,DETE,Experienced
+415.0,Resignation-Other employer,Female,41-45,16.0,False,DETE,Veteran
+416.0,Resignation-Move overseas/interstate,Male,26-30,2.0,False,DETE,New
+417.0,Resignation-Other reasons,Female,61 or older,49.0,False,DETE,Veteran
+418.0,Resignation-Other reasons,Female,41-45,5.0,True,DETE,Experienced
+420.0,Resignation-Other reasons,Female,41-45,1.0,True,DETE,New
+424.0,Resignation-Other employer,Male,31-35,5.0,False,DETE,Experienced
+433.0,Resignation-Move overseas/interstate,Female,26-30,5.0,True,DETE,Experienced
+434.0,Resignation-Other reasons,Female,46-50,20.0,True,DETE,Veteran
+435.0,Resignation-Other reasons,Female,26-30,7.0,True,DETE,Established
+438.0,Resignation-Other reasons,Female,31-35,11.0,True,DETE,Veteran
+440.0,Resignation-Other reasons,Female,56-60,20.0,True,DETE,Veteran
+442.0,Resignation-Other reasons,Female,31-35,3.0,False,DETE,Experienced
+452.0,Resignation-Other reasons,Female,21-25,4.0,False,DETE,Experienced
+453.0,Resignation-Move overseas/interstate,Female,41-45,22.0,False,DETE,Veteran
+455.0,Resignation-Move overseas/interstate,Female,56-60,0.0,True,DETE,New
+457.0,Resignation-Other reasons,Female,21-25,0.0,True,DETE,New
+460.0,Resignation-Move overseas/interstate,Female,36-40,1.0,False,DETE,New
+462.0,Resignation-Other reasons,Female,51-55,3.0,False,DETE,Experienced
+465.0,Resignation-Other employer,Female,36-40,11.0,True,DETE,Veteran
+467.0,Resignation-Other reasons,Female,41-45,13.0,True,DETE,Veteran
+471.0,Resignation-Other reasons,Female,46-50,23.0,True,DETE,Veteran
+474.0,Resignation-Other reasons,Female,51-55,16.0,True,DETE,Veteran
+477.0,Resignation-Other reasons,Male,51-55,5.0,True,DETE,Experienced
+478.0,Resignation-Move overseas/interstate,Male,46-50,9.0,False,DETE,Established
+479.0,Resignation-Other reasons,Female,51-55,13.0,False,DETE,Veteran
+480.0,Resignation-Other reasons,Female,26-30,0.0,True,DETE,New
+482.0,Resignation-Other reasons,Male,41-45,22.0,True,DETE,Veteran
+486.0,Resignation-Move overseas/interstate,Female,46-50,7.0,False,DETE,Established
+487.0,Resignation-Other reasons,Female,41-45,20.0,False,DETE,Veteran
+495.0,Resignation-Other employer,Female,56-60,24.0,True,DETE,Veteran
+496.0,Resignation-Other reasons,Female,46-50,1.0,False,DETE,New
+498.0,Resignation-Move overseas/interstate,Male,36-40,4.0,True,DETE,Experienced
+500.0,Resignation-Move overseas/interstate,Female,26-30,0.0,False,DETE,New
+501.0,Resignation-Other employer,Female,31-35,11.0,False,DETE,Veteran
+504.0,Resignation-Other reasons,Male,61 or older,41.0,True,DETE,Veteran
+505.0,Resignation-Move overseas/interstate,Male,36-40,5.0,False,DETE,Experienced
+506.0,Resignation-Other reasons,Female,46-50,24.0,True,DETE,Veteran
+507.0,Resignation-Other reasons,Female,21-25,4.0,True,DETE,Experienced
+534.0,Resignation-Move overseas/interstate,Male,36-40,14.0,False,DETE,Veteran
+535.0,Resignation-Other reasons,Female,56-60,4.0,False,DETE,Experienced
+537.0,Resignation-Other reasons,Female,46-50,6.0,True,DETE,Experienced
+540.0,Resignation-Other reasons,Female,51-55,6.0,False,DETE,Experienced
+542.0,Resignation-Other reasons,Female,41-45,17.0,True,DETE,Veteran
+544.0,Resignation-Other employer,Female,21-25,2.0,False,DETE,New
+548.0,Resignation-Other employer,Female,41-45,3.0,True,DETE,Experienced
+551.0,Resignation-Other reasons,Male,36-40,13.0,False,DETE,Veteran
+552.0,Resignation-Move overseas/interstate,Male,41-45,2.0,False,DETE,New
+553.0,Resignation-Other reasons,Female,56-60,8.0,True,DETE,Established
+558.0,Resignation-Move overseas/interstate,Female,21-25,2.0,True,DETE,New
+563.0,Resignation-Move overseas/interstate,Female,41-45,1.0,False,DETE,New
+564.0,Resignation-Other reasons,Female,41-45,23.0,True,DETE,Veteran
+569.0,Resignation-Other reasons,Female,46-50,13.0,True,DETE,Veteran
+570.0,Resignation-Other reasons,Male,31-35,3.0,True,DETE,Experienced
+572.0,Resignation-Other reasons,Female,41-45,15.0,False,DETE,Veteran
+576.0,Resignation-Other reasons,Female,31-35,9.0,True,DETE,Established
+577.0,Resignation-Other reasons,Female,26-30,9.0,True,DETE,Established
+578.0,Resignation-Other employer,Female,36-40,19.0,False,DETE,Veteran
+585.0,Resignation-Other employer,Female,51-55,5.0,False,DETE,Experienced
+586.0,Resignation-Move overseas/interstate,Female,21-25,1.0,False,DETE,New
+587.0,Resignation-Move overseas/interstate,Female,51-55,11.0,False,DETE,Veteran
+589.0,Resignation-Other employer,Male,31-35,2.0,True,DETE,New
+590.0,Resignation-Other reasons,Male,61 or older,28.0,True,DETE,Veteran
+591.0,Resignation-Other employer,Female,31-35,9.0,True,DETE,Established
+593.0,Resignation-Other reasons,Female,56-60,12.0,False,DETE,Veteran
+594.0,Resignation-Other reasons,Female,36-40,8.0,True,DETE,Established
+602.0,Resignation-Other employer,Female,26-30,3.0,True,DETE,Experienced
+605.0,Resignation-Other reasons,Female,61 or older,17.0,False,DETE,Veteran
+608.0,Resignation-Other reasons,Female,31-35,9.0,True,DETE,Established
+609.0,Resignation-Other reasons,Female,31-35,9.0,True,DETE,Established
+611.0,Resignation-Other reasons,Female,61 or older,24.0,True,DETE,Veteran
+613.0,Resignation-Other reasons,Female,51-55,20.0,False,DETE,Veteran
+614.0,Resignation-Move overseas/interstate,Female,26-30,3.0,False,DETE,Experienced
+618.0,Resignation-Other reasons,Female,51-55,17.0,True,DETE,Veteran
+620.0,Resignation-Other employer,Female,36-40,10.0,False,DETE,Established
+622.0,Resignation-Other reasons,Female,51-55,30.0,True,DETE,Veteran
+624.0,Resignation-Move overseas/interstate,Female,56-60,9.0,False,DETE,Established
+626.0,Resignation-Other reasons,Female,41-45,2.0,True,DETE,New
+627.0,Resignation-Other reasons,Female,26-30,3.0,True,DETE,Experienced
+632.0,Resignation-Other reasons,Male,41-45,7.0,True,DETE,Established
+638.0,Resignation-Other reasons,Female,36-40,0.0,False,DETE,New
+642.0,Resignation-Move overseas/interstate,Female,36-40,3.0,False,DETE,Experienced
+643.0,Resignation-Move overseas/interstate,Female,31-35,3.0,False,DETE,Experienced
+648.0,Resignation-Other reasons,Female,51-55,21.0,False,DETE,Veteran
+650.0,Resignation-Other employer,Female,51-55,18.0,False,DETE,Veteran
+651.0,Resignation-Other employer,Female,61 or older,17.0,True,DETE,Veteran
+652.0,Resignation-Other reasons,Female,51-55,3.0,True,DETE,Experienced
+653.0,Resignation-Move overseas/interstate,Female,61 or older,27.0,False,DETE,Veteran
+660.0,Resignation-Other reasons,Female,41-45,15.0,False,DETE,Veteran
+666.0,Resignation-Other employer,Male,46-50,15.0,True,DETE,Veteran
+668.0,Resignation-Other employer,Male,21-25,2.0,False,DETE,New
+669.0,Resignation-Other reasons,Female,41-45,2.0,False,DETE,New
+671.0,Resignation-Move overseas/interstate,Female,26-30,0.0,True,DETE,New
+672.0,Resignation-Move overseas/interstate,Female,21-25,0.0,False,DETE,New
+673.0,Resignation-Other employer,Female,41-45,4.0,False,DETE,Experienced
+678.0,Resignation-Other employer,Female,26-30,4.0,True,DETE,Experienced
+680.0,Resignation-Move overseas/interstate,Female,36-40,1.0,False,DETE,New
+686.0,Resignation-Other employer,Female,46-50,9.0,True,DETE,Established
+687.0,Resignation-Other employer,Male,56-60,29.0,False,DETE,Veteran
+689.0,Resignation-Other reasons,Female,46-50,0.0,False,DETE,New
+692.0,Resignation-Move overseas/interstate,Female,31-35,10.0,False,DETE,Established
+693.0,Resignation-Other employer,Female,36-40,16.0,False,DETE,Veteran
+694.0,Resignation-Other reasons,Female,21-25,1.0,False,DETE,New
+695.0,Resignation-Move overseas/interstate,Male,41-45,4.0,False,DETE,Experienced
+698.0,Resignation-Move overseas/interstate,Male,26-30,5.0,False,DETE,Experienced
+700.0,Resignation-Other reasons,Female,41-45,3.0,True,DETE,Experienced
+702.0,Resignation-Other employer,Male,21-25,6.0,False,DETE,Experienced
+703.0,Resignation-Other reasons,Female,46-50,25.0,False,DETE,Veteran
+705.0,Resignation-Move overseas/interstate,Female,51-55,0.0,True,DETE,New
+718.0,Resignation-Other reasons,Female,51-55,13.0,True,DETE,Veteran
+728.0,Resignation-Other employer,Male,56-60,39.0,True,DETE,Veteran
+729.0,Resignation-Other reasons,Female,51-55,34.0,True,DETE,Veteran
+732.0,Resignation-Other employer,Female,46-50,14.0,True,DETE,Veteran
+733.0,Resignation-Other reasons,Male,56-60,22.0,True,DETE,Veteran
+737.0,Resignation-Move overseas/interstate,Female,61 or older,7.0,False,DETE,Established
+739.0,Resignation-Other reasons,Male,56-60,14.0,False,DETE,Veteran
+746.0,Resignation-Other employer,Female,41-45,22.0,True,DETE,Veteran
+749.0,Resignation-Move overseas/interstate,Female,41-45,6.0,False,DETE,Experienced
+753.0,Resignation-Other reasons,Male,61 or older,8.0,True,DETE,Established
+754.0,Resignation-Other reasons,Female,46-50,15.0,False,DETE,Veteran
+755.0,Resignation-Other employer,Female,31-35,9.0,True,DETE,Established
+757.0,Resignation-Other employer,Female,41-45,1.0,False,DETE,New
+764.0,Resignation-Other employer,Female,41-45,0.0,False,DETE,New
+768.0,Resignation-Other employer,Male,26-30,7.0,False,DETE,Established
+771.0,Resignation-Other reasons,Female,46-50,5.0,False,DETE,Experienced
+773.0,Resignation-Other employer,Male,36-40,12.0,False,DETE,Veteran
+786.0,Resignation-Other reasons,Female,21-25,0.0,True,DETE,New
+788.0,Resignation-Other employer,Female,41-45,20.0,True,DETE,Veteran
+791.0,Resignation-Other reasons,Female,51-55,31.0,False,DETE,Veteran
+792.0,Resignation-Other reasons,Male,36-40,6.0,True,DETE,Experienced
+805.0,Resignation-Other employer,Female,46-50,10.0,False,DETE,Established
+806.0,Resignation-Other employer,Female,26-30,6.0,False,DETE,Experienced
+808.0,Resignation-Other employer,Female,41-45,8.0,False,DETE,Established
+809.0,Resignation-Other reasons,Female,36-40,9.0,True,DETE,Established
+810.0,Resignation-Other reasons,Female,26-30,3.0,False,DETE,Experienced
+817.0,Resignation-Other employer,Male,21-25,2.0,False,DETE,New
+818.0,Resignation-Move overseas/interstate,Female,21-25,2.0,False,DETE,New
+821.0,Resignation-Move overseas/interstate,Female,31-35,5.0,True,DETE,Experienced
+6.34146578511788e+17,Resignation,Male,41  45,3.0,False,TAFE,Experienced
+6.34147506906311e+17,Resignation,Female,56 or older,7.0,False,TAFE,Established
+6.34152007975694e+17,Resignation,Male,20 or younger,3.0,False,TAFE,Experienced
+6.34153745310374e+17,Resignation,Male,46  50,3.0,False,TAFE,Experienced
+6.34157899735969e+17,Resignation,Female,36  40,3.0,False,TAFE,Experienced
+6.34158812168312e+17,Resignation,Female,21  25,1.0,False,TAFE,New
+6.34158825838625e+17,Resignation,Female,41  45,,False,TAFE,
+6.3417252283144e+17,Resignation,Female,31  35,11.0,False,TAFE,Veteran
+6.34172609223344e+17,Resignation,Female,31  35,7.0,True,TAFE,Established
+6.34176076134409e+17,Resignation,Female,46  50,11.0,False,TAFE,Veteran
+6.34177053480062e+17,Resignation,Female,31  35,7.0,True,TAFE,Established
+6.34184748867652e+17,Resignation,Male,26  30,5.0,False,TAFE,Experienced
+6.34190678592028e+17,Resignation,Female,26  30,,False,TAFE,
+6.34190743855375e+17,Resignation,Female,31  35,7.0,False,TAFE,Established
+6.34193458894281e+17,Resignation,Male,56 or older,,False,TAFE,
+6.341993935285e+17,Resignation,Female,31  35,,False,TAFE,
+6.34200229589215e+17,Resignation,Female,46  50,,False,TAFE,
+6.34208993864195e+17,Resignation,Female,26  30,,True,TAFE,
+6.34209003247164e+17,Resignation,Female,36  40,11.0,False,TAFE,Veteran
+6.34209012525289e+17,Resignation,Male,31  35,3.0,False,TAFE,Experienced
+6.34209027931539e+17,Resignation,Male,51-55,11.0,False,TAFE,Veteran
+6.34209037420601e+17,Resignation,Female,56 or older,,False,TAFE,
+6.34211542757094e+17,Resignation,Male,31  35,,True,TAFE,
+6.3421319649857e+17,Resignation,Male,56 or older,3.0,False,TAFE,Experienced
+6.34214156864906e+17,Resignation,Female,41  45,3.0,True,TAFE,Experienced
+6.34218492665219e+17,Resignation,Female,31  35,,False,TAFE,
+6.34219251646781e+17,Resignation,Female,26  30,3.0,False,TAFE,Experienced
+6.34219274566469e+17,Resignation,Female,56 or older,3.0,True,TAFE,Experienced
+6.34220006275757e+17,Resignation,Male,51-55,3.0,False,TAFE,Experienced
+6.34220145175757e+17,Resignation,Male,46  50,11.0,True,TAFE,Veteran
+6.34221044292008e+17,Resignation,Female,21  25,,True,TAFE,
+6.34223513490601e+17,Resignation,Female,31  35,1.0,False,TAFE,New
+6.34226171903257e+17,Resignation,Male,51-55,3.0,False,TAFE,Experienced
+6.3422718506975e+17,Resignation,Female,36  40,7.0,True,TAFE,Established
+6.34227207368969e+17,Resignation,Female,51-55,5.0,False,TAFE,Experienced
+6.34231466668883e+17,Resignation,Female,20 or younger,,True,TAFE,
+6.34241795347656e+17,Resignation,Male,41  45,,True,TAFE,
+6.34243628858726e+17,Resignation,Female,46  50,7.0,False,TAFE,Established
+6.34243664081406e+17,Resignation,Male,41  45,5.0,False,TAFE,Experienced
+6.34245133689063e+17,Resignation,Female,41  45,5.0,False,TAFE,Experienced
+6.34250409172945e+17,Resignation,Female,56 or older,3.0,False,TAFE,Experienced
+6.34251116016226e+17,Resignation,Female,26  30,7.0,False,TAFE,Established
+6.34251290130132e+17,Resignation,Female,41  45,3.0,True,TAFE,Experienced
+6.3425975246732e+17,Resignation,Female,31  35,,False,TAFE,
+6.34260719918915e+17,Resignation,Female,41  45,,False,TAFE,
+6.34266938733603e+17,Resignation,Female,31  35,11.0,False,TAFE,Veteran
+6.3426772590329e+17,Resignation,Male,56 or older,11.0,False,TAFE,Veteran
+6.34268446707283e+17,Resignation,Female,31  35,,True,TAFE,
+6.34269438105095e+17,Resignation,Male,21  25,1.0,True,TAFE,New
+6.34273756721501e+17,Resignation,Female,46  50,5.0,True,TAFE,Experienced
+6.34275489048845e+17,Resignation,Female,36  40,,True,TAFE,
+6.34280719819371e+17,Resignation,Female,36  40,11.0,False,TAFE,Veteran
+6.34281400568746e+17,Resignation,Male,41  45,3.0,False,TAFE,Experienced
+6.34284989401715e+17,Resignation,Male,36  40,,False,TAFE,
+6.34285909851304e+17,Resignation,Female,26  30,,False,TAFE,
+6.34298884567184e+17,Resignation,Female,26  30,7.0,True,TAFE,Established
+6.34309981362554e+17,Resignation,Male,56 or older,11.0,False,TAFE,Veteran
+6.34310942921246e+17,Resignation,Male,41  45,11.0,False,TAFE,Veteran
+6.34314358367965e+17,Resignation,Female,31  35,,False,TAFE,
+6.34316886387496e+17,Resignation,Male,46  50,3.0,False,TAFE,Experienced
+6.34317688380679e+17,Resignation,Female,26  30,3.0,False,TAFE,Experienced
+6.34322927651559e+17,Resignation,Male,51-55,,True,TAFE,
+6.3432311502146e+17,Resignation,Male,51-55,,True,TAFE,
+6.34323709021402e+17,Resignation,Male,51-55,,True,TAFE,
+6.34323806434371e+17,Resignation,Female,46  50,3.0,False,TAFE,Experienced
+6.34326352243491e+17,Resignation,Female,21  25,1.0,False,TAFE,New
+6.3432645414859e+17,Resignation,Female,41  45,1.0,False,TAFE,New
+6.34328087765991e+17,Resignation,Female,51-55,,False,TAFE,
+6.34328171329844e+17,Resignation,Female,36  40,3.0,False,TAFE,Experienced
+6.34328202850835e+17,Resignation,Female,51-55,3.0,True,TAFE,Experienced
+6.34329804601719e+17,Resignation,Male,46  50,5.0,False,TAFE,Experienced
+6.34329959592554e+17,Resignation,Male,21  25,3.0,False,TAFE,Experienced
+6.34346271723281e+17,Resignation,Male,31  35,1.0,False,TAFE,New
+6.34353285189063e+17,Resignation,Female,26  30,,False,TAFE,
+6.34356555160312e+17,Resignation,Female,51-55,,False,TAFE,
+6.34356560392188e+17,Resignation,Female,36  40,3.0,False,TAFE,Experienced
+6.34356641434062e+17,Resignation,Male,56 or older,,False,TAFE,
+6.34356731460781e+17,Resignation,Female,21  25,,False,TAFE,
+6.34358247777344e+17,Resignation,Male,20 or younger,,False,TAFE,
+6.34365142728281e+17,Resignation,Female,21  25,,True,TAFE,
+6.3436545961125e+17,Resignation,Female,41  45,,False,TAFE,
+6.34366032016094e+17,Resignation,Female,20 or younger,,False,TAFE,
+6.34370483668125e+17,Resignation,Female,51-55,,True,TAFE,
+6.34376433396563e+17,Resignation,Female,41  45,5.0,False,TAFE,Experienced
+6.34377507269688e+17,Resignation,Female,51-55,,False,TAFE,
+6.34388661685e+17,Resignation,Female,46  50,1.0,False,TAFE,New
+6.34389476488906e+17,Resignation,Female,21  25,3.0,False,TAFE,Experienced
+6.3439543481625e+17,Resignation,Male,21  25,1.0,False,TAFE,New
+6.34399738233281e+17,Resignation,Female,21  25,5.0,False,TAFE,Experienced
+6.34407548427969e+17,Resignation,Female,31  35,3.0,False,TAFE,Experienced
+6.34411016475156e+17,Resignation,Female,21  25,3.0,True,TAFE,Experienced
+6.34412849002344e+17,Resignation,Male,41  45,3.0,True,TAFE,Experienced
+6.34417864506406e+17,Resignation,Female,46  50,,True,TAFE,
+6.34418043788438e+17,Resignation,Female,26  30,1.0,True,TAFE,New
+6.34419660420156e+17,Resignation,Male,46  50,1.0,True,TAFE,New
+6.34419812329531e+17,Resignation,Male,46  50,1.0,False,TAFE,New
+6.344250437875e+17,Resignation,Female,46  50,5.0,False,TAFE,Experienced
+6.34429978393906e+17,Resignation,Female,41  45,1.0,False,TAFE,New
+6.34430196933125e+17,Resignation,Female,36  40,,False,TAFE,
+6.34431906734219e+17,Resignation,Male,36  40,5.0,False,TAFE,Experienced
+6.34436080180469e+17,Resignation,Male,26  30,,True,TAFE,
+6.34443964450156e+17,Resignation,Male,41  45,1.0,False,TAFE,New
+6.34444676214219e+17,Resignation,Female,41  45,3.0,False,TAFE,Experienced
+6.34454356619531e+17,Resignation,Female,21  25,,False,TAFE,
+6.34456033339688e+17,Resignation,Female,41  45,,True,TAFE,
+6.34462838669219e+17,Resignation,Female,31  35,1.0,False,TAFE,New
+6.34465408262031e+17,Resignation,Female,21  25,1.0,True,TAFE,New
+6.34466338996094e+17,Resignation,Male,41  45,1.0,False,TAFE,New
+6.3446906019125e+17,Resignation,Male,36  40,,False,TAFE,
+6.34474119730625e+17,Resignation,Female,21  25,1.0,False,TAFE,New
+6.344801538575e+17,Resignation,Female,26  30,1.0,True,TAFE,New
+6.34480996232969e+17,Resignation,Female,41  45,11.0,True,TAFE,Veteran
+6.3448707873875e+17,Resignation,Female,46  50,5.0,False,TAFE,Experienced
+6.34495664096406e+17,Resignation,Female,26  30,3.0,False,TAFE,Experienced
+6.34496573562969e+17,Resignation,Female,51-55,1.0,False,TAFE,New
+6.34497559461719e+17,Resignation,Male,31  35,1.0,False,TAFE,New
+6.34498298127969e+17,Resignation,Female,20 or younger,,False,TAFE,
+6.34508607117812e+17,Resignation,Male,21  25,3.0,False,TAFE,Experienced
+6.34509621647969e+17,Resignation,Female,51-55,,False,TAFE,
+6.34515603225e+17,Resignation,Female,36  40,1.0,True,TAFE,New
+6.34517445885469e+17,Resignation,Female,41  45,11.0,False,TAFE,Veteran
+6.34520852160469e+17,Resignation,Female,51-55,,False,TAFE,
+6.34521642169688e+17,Resignation,Female,21  25,3.0,True,TAFE,Experienced
+6.34522371755781e+17,Resignation,Female,36  40,,False,TAFE,
+6.34526057042656e+17,Resignation,Female,41  45,,False,TAFE,
+6.34527641594062e+17,Resignation,Female,20 or younger,1.0,False,TAFE,New
+6.34541462557656e+17,Resignation,Female,21  25,3.0,False,TAFE,Experienced
+6.34550190071875e+17,Resignation,Female,51-55,1.0,False,TAFE,New
+6.34551070180781e+17,Resignation,Female,36  40,5.0,False,TAFE,Experienced
+6.3455287020625e+17,Resignation,Male,36  40,3.0,False,TAFE,Experienced
+6.34556300304062e+17,Resignation,Female,41  45,1.0,False,TAFE,New
+6.345578604725e+17,Resignation,Male,46  50,11.0,False,TAFE,Veteran
+6.3455802800948e+17,Resignation,Male,26  30,1.0,False,TAFE,New
+6.3455895140073e+17,Resignation,Female,56 or older,,False,TAFE,
+6.34563904634531e+17,Resignation,Female,56 or older,5.0,False,TAFE,Experienced
+6.34564737601875e+17,Resignation,Male,46  50,,True,TAFE,
+6.34565719506875e+17,Resignation,Male,46  50,,False,TAFE,
+6.34568278370781e+17,Resignation,Male,51-55,,True,TAFE,
+6.34568317773125e+17,Resignation,Male,56 or older,,False,TAFE,
+6.34570247249322e+17,Resignation,Female,56 or older,11.0,False,TAFE,Veteran
+6.34570842998906e+17,Resignation,Female,46  50,5.0,True,TAFE,Experienced
+6.34574339025156e+17,Resignation,Male,51-55,,True,TAFE,
+6.3457516073125e+17,Resignation,Male,51-55,11.0,False,TAFE,Veteran
+6.345754127925e+17,Resignation,Female,56 or older,,True,TAFE,
+6.34576020012813e+17,Resignation,Female,56 or older,11.0,False,TAFE,Veteran
+6.34576957824062e+17,Resignation,Female,56 or older,11.0,False,TAFE,Veteran
+6.34577056474375e+17,Resignation,Female,21  25,,False,TAFE,
+6.34577945776563e+17,Resignation,Female,51-55,3.0,False,TAFE,Experienced
+6.34577978929375e+17,Resignation,Female,31  35,3.0,False,TAFE,Experienced
+6.3458117411625e+17,Resignation,Male,51-55,,True,TAFE,
+6.34582074204062e+17,Resignation,Female,26  30,,False,TAFE,
+6.34582155813125e+17,Resignation,Female,46  50,1.0,False,TAFE,New
+6.34589153179219e+17,Resignation,Female,51-55,,False,TAFE,
+6.34592549493281e+17,Resignation,Female,46  50,3.0,False,TAFE,Experienced
+6.34593386107187e+17,Resignation,Female,41  45,1.0,False,TAFE,New
+6.34595867098906e+17,Resignation,Female,41  45,3.0,False,TAFE,Experienced
+6.34600285342656e+17,Resignation,Female,41  45,,False,TAFE,
+6.34617650635469e+17,Resignation,Male,41  45,3.0,True,TAFE,Experienced
+6.34620134299688e+17,Resignation,Female,36  40,5.0,False,TAFE,Experienced
+6.34623599234844e+17,Resignation,Female,56 or older,11.0,False,TAFE,Veteran
+6.34634833429063e+17,Resignation,Female,31  35,1.0,True,TAFE,New
+6.34635009354531e+17,Resignation,Female,31  35,,False,TAFE,
+6.34638198687656e+17,Resignation,Male,36  40,7.0,False,TAFE,Established
+6.3463826696125e+17,Resignation,Male,41  45,1.0,True,TAFE,New
+6.34638274154219e+17,Resignation,Female,26  30,1.0,False,TAFE,New
+6.34638401683906e+17,Resignation,Male,56 or older,11.0,True,TAFE,Veteran
+6.34648744738906e+17,Resignation,Female,51-55,1.0,False,TAFE,New
+6.34648747047187e+17,Resignation,Male,51-55,11.0,False,TAFE,Veteran
+6.34653126293281e+17,Resignation,Male,26  30,7.0,False,TAFE,Established
+6.34662477490156e+17,Resignation,Female,31  35,,False,TAFE,
+6.34666854789531e+17,Resignation,Female,41  45,11.0,False,TAFE,Veteran
+6.34668611537031e+17,Resignation,Female,31  35,3.0,False,TAFE,Experienced
+6.34671263031094e+17,Resignation,Female,26  30,5.0,True,TAFE,Experienced
+6.34671297286719e+17,Resignation,Female,51-55,1.0,False,TAFE,New
+6.34674515660156e+17,Resignation,Male,36  40,11.0,True,TAFE,Veteran
+6.34683356744531e+17,Resignation,Female,20 or younger,3.0,False,TAFE,Experienced
+6.34691779624687e+17,Resignation,Female,21  25,1.0,False,TAFE,New
+6.34696179014844e+17,Resignation,Female,26  30,7.0,False,TAFE,Established
+6.34697816674062e+17,Resignation,Female,26  30,,False,TAFE,
+6.347023585025e+17,Resignation,Male,36  40,3.0,True,TAFE,Experienced
+6.34702366178594e+17,Resignation,Male,31  35,5.0,False,TAFE,Experienced
+6.34713425884844e+17,Resignation,Female,56 or older,1.0,False,TAFE,New
+6.34722082133437e+17,Resignation,Male,21  25,1.0,False,TAFE,New
+6.34722949292074e+17,Resignation,Male,41  45,1.0,True,TAFE,New
+6.34722992951406e+17,Resignation,Female,31  35,1.0,True,TAFE,New
+6.34743600339485e+17,Resignation,Male,56 or older,,False,TAFE,
+6.3475061227315e+17,Resignation,Female,46  50,,False,TAFE,
+6.34753384952766e+17,Resignation,Female,51-55,,False,TAFE,
+6.34760046003775e+17,Resignation,Female,36  40,5.0,True,TAFE,Experienced
+6.34763735587969e+17,Resignation,Female,31  35,,False,TAFE,
+6.34774030826094e+17,Resignation,Female,46  50,,False,TAFE,
+6.34774723180937e+17,Resignation,Male,46  50,11.0,False,TAFE,Veteran
+6.34775905600156e+17,Resignation,Male,36  40,,True,TAFE,
+6.34776478226875e+17,Resignation,Male,21  25,1.0,False,TAFE,New
+6.34779998192656e+17,Resignation,Female,36  40,1.0,True,TAFE,New
+6.34781625247656e+17,Resignation,Female,21  25,,False,TAFE,
+6.34781843688125e+17,Resignation,Female,51-55,5.0,True,TAFE,Experienced
+6.34786182825625e+17,Resignation,Female,21  25,1.0,False,TAFE,New
+6.34786910427969e+17,Resignation,Female,41  45,11.0,False,TAFE,Veteran
+6.34788542900625e+17,Resignation,Male,31  35,1.0,False,TAFE,New
+6.34789421680312e+17,Resignation,Female,41  45,5.0,True,TAFE,Experienced
+6.34793871139219e+17,Resignation,Female,21  25,3.0,False,TAFE,Experienced
+6.34794639635781e+17,Resignation,Female,21  25,,False,TAFE,
+6.34794857718438e+17,Resignation,Male,56 or older,1.0,True,TAFE,New
+6.34799770843437e+17,Resignation,Female,46  50,1.0,True,TAFE,New
+6.3480076201625e+17,Resignation,Male,26  30,3.0,False,TAFE,Experienced
+6.34807637421719e+17,Resignation,Female,46  50,7.0,True,TAFE,Established
+6.34811063824844e+17,Resignation,Male,41  45,,False,TAFE,
+6.34812805553281e+17,Resignation,Female,21  25,1.0,True,TAFE,New
+6.34813581041094e+17,Resignation,Female,26  30,1.0,False,TAFE,New
+6.34816502884375e+17,Resignation,Male,36  40,1.0,False,TAFE,New
+6.3481720866375e+17,Resignation,Female,21  25,1.0,True,TAFE,New
+6.34823973840625e+17,Resignation,Male,21  25,1.0,False,TAFE,New
+6.34825003759375e+17,Resignation,Female,31  35,3.0,False,TAFE,Experienced
+6.348250791775e+17,Resignation,Female,20 or younger,3.0,True,TAFE,Experienced
+6.34825691015156e+17,Resignation,Male,51-55,1.0,False,TAFE,New
+6.34831756059375e+17,Resignation,Male,56 or older,3.0,False,TAFE,Experienced
+6.3483795741875e+17,Resignation,Female,26  30,3.0,True,TAFE,Experienced
+6.34837984851406e+17,Resignation,Female,56 or older,3.0,False,TAFE,Experienced
+6.348438490525e+17,Resignation,Female,36  40,11.0,False,TAFE,Veteran
+6.34849101152813e+17,Resignation,Female,41  45,1.0,False,TAFE,New
+6.34852685801719e+17,Resignation,Male,21  25,1.0,False,TAFE,New
+6.34854316269063e+17,Resignation,Male,46  50,,False,TAFE,
+6.348543995725e+17,Resignation,Female,56 or older,5.0,False,TAFE,Experienced
+6.34860279552344e+17,Resignation,Male,51-55,7.0,False,TAFE,Established
+6.34866546778594e+17,Resignation,Male,36  40,7.0,False,TAFE,Established
+6.34867257481719e+17,Resignation,Female,31  35,,False,TAFE,
+6.34873325422656e+17,Resignation,Female,36  40,7.0,False,TAFE,Established
+6.34874537800469e+17,Resignation,Female,36  40,,False,TAFE,
+6.34878466942188e+17,Resignation,Female,26  30,1.0,False,TAFE,New
+6.34880266652344e+17,Resignation,Female,31  35,,False,TAFE,
+6.34884416485938e+17,Resignation,Female,46  50,5.0,True,TAFE,Experienced
+6.3488615834625e+17,Resignation,Male,31  35,3.0,True,TAFE,Experienced
+6.3488880224e+17,Resignation,Female,56 or older,3.0,True,TAFE,Experienced
+6.34889851025469e+17,Resignation,Male,36  40,7.0,False,TAFE,Established
+6.34890472281094e+17,Resignation,Male,46  50,7.0,False,TAFE,Established
+6.3489055184875e+17,Resignation,Male,41  45,1.0,False,TAFE,New
+6.34892336760312e+17,Resignation,Female,21  25,3.0,True,TAFE,Experienced
+6.34892361974219e+17,Resignation,Female,31  35,1.0,False,TAFE,New
+6.34902770430459e+17,Resignation,Male,41  45,1.0,False,TAFE,New
+6.34903651349219e+17,Resignation,Male,51-55,3.0,False,TAFE,Experienced
+6.34907124987812e+17,Resignation,Female,51-55,7.0,True,TAFE,Established
+6.34908638162969e+17,Resignation,Female,21  25,3.0,True,TAFE,Experienced
+6.34908831659365e+17,Resignation,Female,46  50,1.0,False,TAFE,New
+6.34932864696524e+17,Resignation,Male,36  40,5.0,False,TAFE,Experienced
+6.34933010519531e+17,Resignation,Female,46  50,7.0,False,TAFE,Established
+6.34938047980781e+17,Resignation,Female,41  45,3.0,False,TAFE,Experienced
+6.34938094787656e+17,Resignation,Male,41  45,5.0,True,TAFE,Experienced
+6.34940601409024e+17,Resignation,Female,56 or older,5.0,False,TAFE,Experienced
+6.34945048175625e+17,Resignation,Female,41  45,3.0,False,TAFE,Experienced
+6.34945136067187e+17,Resignation,Female,36  40,5.0,False,TAFE,Experienced
+6.34951129892031e+17,Resignation,Male,31  35,3.0,False,TAFE,Experienced
+6.34951997495625e+17,Resignation,Female,46  50,5.0,False,TAFE,Experienced
+6.34958140455899e+17,Resignation,Male,46  50,3.0,False,TAFE,Experienced
+6.34964112426563e+17,Resignation,Female,21  25,3.0,False,TAFE,Experienced
+6.34969167674375e+17,Resignation,Female,56 or older,11.0,True,TAFE,Veteran
+6.34970182194493e+17,Resignation,Male,51-55,1.0,False,TAFE,New
+6.34975184457305e+17,Resignation,Female,26  30,,False,TAFE,
+6.34975203429336e+17,Resignation,Male,20 or younger,,False,TAFE,
+6.3497631483625e+17,Resignation,Male,46  50,7.0,True,TAFE,Established
+6.34977079348281e+17,Resignation,Female,46  50,5.0,False,TAFE,Experienced
+6.34982066598317e+17,Resignation,Male,51-55,7.0,False,TAFE,Established
+6.34985719186563e+17,Resignation,Male,51-55,3.0,False,TAFE,Experienced
+6.3499166642113e+17,Resignation,Male,36  40,1.0,True,TAFE,New
+6.3499269435863e+17,Resignation,Female,26  30,,False,TAFE,
+6.34995296716719e+17,Resignation,Female,51-55,,False,TAFE,
+6.34998528620661e+17,Resignation,Female,46  50,1.0,False,TAFE,New
+6.34999429878281e+17,Resignation,Female,41  45,3.0,False,TAFE,Experienced
+6.35000251520036e+17,Resignation,Female,46  50,5.0,True,TAFE,Experienced
+6.35010822773594e+17,Resignation,Female,26  30,3.0,False,TAFE,Experienced
+6.35012661372849e+17,Resignation,Female,46  50,,True,TAFE,
+6.35017508419688e+17,Resignation,Male,51-55,,True,TAFE,
+6.35019417764844e+17,Resignation,Female,41  45,1.0,False,TAFE,New
+6.35021852425625e+17,Resignation,Female,36  40,,False,TAFE,
+6.35025280694687e+17,Resignation,Male,51-55,3.0,False,TAFE,Experienced
+6.35027942448125e+17,Resignation,Female,56 or older,1.0,False,TAFE,New
+6.35031425678438e+17,Resignation,Female,26  30,,False,TAFE,
+6.35035655232813e+17,Resignation,Female,26  30,,False,TAFE,
+6.35037423338906e+17,Resignation,Female,41  45,,False,TAFE,
+6.35037453598125e+17,Resignation,Male,41  45,3.0,False,TAFE,Experienced
+6.35040151398125e+17,Resignation,Female,26  30,1.0,True,TAFE,New
+6.3504256585625e+17,Resignation,Female,41  45,5.0,False,TAFE,Experienced
+6.35047878104375e+17,Resignation,Female,46  50,5.0,False,TAFE,Experienced
+6.3504798376125e+17,Resignation,Male,41  45,,True,TAFE,
+6.35049585605e+17,Resignation,Female,56 or older,3.0,False,TAFE,Experienced
+6.35059949710781e+17,Resignation,Female,26  30,1.0,False,TAFE,New
+6.35065973820625e+17,Resignation,Male,21  25,5.0,False,TAFE,Experienced
+6.35066785175197e+17,Resignation,Male,51-55,1.0,False,TAFE,New
+6.35070442972541e+17,Resignation,Female,51-55,5.0,False,TAFE,Experienced
+6.35073030973791e+17,Resignation,Female,26  30,3.0,False,TAFE,Experienced

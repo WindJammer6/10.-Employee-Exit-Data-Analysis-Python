@@ -1,0 +1,17 @@
+#Instructions:
+#1. Start by writing a paragraph in a markdown cell introducing the project and the dataset.
+#2. Import the pandas and NumPy libraries.
+#3. Read the dete_survey.csv CSV file into pandas, and assign it to the variable name dete_survey.
+#4. Read the tafe_survey.csv CSV file into pandas, and assign it to the variable name tafe_survey.
+#5. Use the DataFrame.info() and DataFrame.head() methods to print information about both dataframes, 
+#   as well as the first few rows. Use other data exploration methods such as the Series.value_counts() 
+#   and DataFrame.isnull() methods to explore the data and figure out some next steps.
+
+import pandas as pd
+
+dete_survey = pd.read_csv('dete_survey.csv')
+tafe_survey = pd.read_csv('tafe_survey.csv')
+print(dete_survey.info())
+print(dete_survey.head(5))
+print(tafe_survey.info())
+print(tafe_survey.head(5))
