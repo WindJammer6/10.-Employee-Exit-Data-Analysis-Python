@@ -12,7 +12,7 @@ Python programming and its commonly used Python libraries. I spent significantly
 <br>
 
 For this Employee Exit Data Analysis Project, we will answer in the guided aspect: **'Are employees who only worked for the institutes for a short period of time resigning due to some kind of dissatisfaction? What about employees who have been there longer?'** and
-**Are younger employees resigning due to some kind of dissatisfaction? What about older employees?'**. For the non-guided aspect, we will answer **'How many people in each age group resgined due to some kind of dissatisfaction?'**
+**'Are younger employees resigning due to some kind of dissatisfaction? What about older employees?'**. For the non-guided aspect, we will answer **'How many people in each age group resgined due to some kind of dissatisfaction?'**
 
 <br>
 
@@ -453,27 +453,40 @@ def main():
     #Checking the values in the 'institute_service' column again
     print(combined_updated['institute_service'].value_counts())
 ```
-For task 9, the task is to create a 'service_cat' column in both the dete_survey and tafe_survey datasets indicating how long a respondant has been working in the organisation. In the Dataquest guide the service categories are defined as 
-New: Less than 3 years at a company
-Experienced: 3-6 years at a company
-Established: 7-10 years at a company
-Veteran: 11 or more years at a company
+For task 9, the task is to create a 'service_cat' column in both the dete_survey and tafe_survey (now combined) datasets indicating how long a respondant has been working in the organisation. In the Dataquest guide the service categories are defined as:
 
+-New: Less than 3 years at a company
+
+-Experienced: 3-6 years at a company
+
+-Established: 7-10 years at a company
+
+-Veteran: 11 or more years at a company
+
+To do so, we take reference from the 'institute_service' columns for both datasets. Checking the 'institute_service' columns for the combined dataset, there is unusual input in the tafe_survey part of the combined dataset while dete_survey dataset's 'institute_service' column have no unusual input (Because in Task 6, we already cleaned as we created the 'institute_service' columns).
+
+There are unusual inputs (strings) such as 'Less than one year', 'More than 20 years', '1-2', and '11-20' that we dealt with seperately in the code above (technicalities explained in comments in code).
+
+```python
     #Using the Series.astype() method to change the type of the 'institute_service' column to 'float'
     combined_updated['institute_service'] = combined_updated['institute_service'].astype(float)
-
+    
     #Checking the values in the 'institute_service' column again as well as its data type
     print(combined_updated['institute_service'].value_counts())
     print(combined_updated.info())
+```
+Converting the data type of the 'institute_service' column from object to float after dealing with the unusual inputs.
 
+```python
     #Applying the 'career_stage' function to the 'institute_service' column and adding the new labels into a new
     #column 'service_cat'
     combined_updated['service_cat'] = combined_updated['institute_service'].apply(career_stage)
     print(combined_updated['service_cat'].value_counts())
     print(combined_updated.info())
+```
+Applying the self-made function 'career_stage' to assign each element/respondants career stage according to the definitions provided by Dataquest's guide through the '.apply()' function once again and creating a 'service_cat' column in the combined dataset in the process.
 
-    combined_updated.to_csv('combined_updated2.csv', index=False)
-
+```python
 #Creating the career_stage function
 def career_stage(val):
     if val < 3:
@@ -487,78 +500,78 @@ def career_stage(val):
 
 
 main()
+```
+This is how the self-made function 'career_stage' look like, quite similar to the self-made function 'update_val' in Task 7.
 
 <br>
 
 <br>
-
 
 **3. Data Modelling and Analysis**
 
-Up till now, the cleaning and preparing of the data will enable us to do some data analysis via looking at the patterns of the graphs and answer some questions about the Star Wars survey. In my code, I will see which Star Wars movie was ranked the best? (In Task 5)
+Up till now, the cleaning and preparing of the data will enable us to do some data analysis via looking at the patterns of the graphs and answer some questions about the Employee Exit surveys. In my code, I will be exploring questions like 'Are employees who only worked for the institutes for a short period of time resigning due to some kind of dissatisfaction? What about employees who have been there longer?' and 'Are younger employees resigning due to some kind of dissatisfaction? What about older employees?' (Task 10)
 
-I also created a bar graph showing which Star Wars movie has the most views out of the surveyed population. (In Task 6)
+For visualisation, I drew a bar graph of percentage of resigned employees due to dissatisfaction (vs other reasons for exit) for each defined career stage. (Task 10)
 
-I have read in the discussions page in the Dataquest website that using correlation between these 2 graphs, that we may be able to have better insights into data analysis using the '.corr()' function. The code is done by someone else in the discussions page in the Dataquest website which I thought was quite interesting and a way to analyse data that I would want to try in future personal projects.
-
-_Task 5_
+_Task 10_
 ```python
 import matplotlib.pyplot as plt
 import pandas as pd
 ```
+Imported the matplotlib library to draw graphs.
+
 ```python
-labels = ['Ep 1', 'Ep 2', 'Ep 3', 'Ep 4', 'Ep 5', 'Ep 6']
-values = [starwars['rank1'].mean(), starwars['rank2'].mean(), starwars['rank3'].mean(), starwars['rank4'].mean(), starwars['rank5'].mean(), starwars['rank6'].mean()]
+combined_updated = pd.read_csv('combined_updated2.csv')
 
-plt.bar(labels, values)
+#1 and 2. As we can see from this code, we only have True or False values in the 'dissatisfied' column as we have already
+#   decided to drop all the rows with NaN values in any of the columns. We may have lost some data, but it is not
+#   a significant lost during this cleaning process
+print(combined_updated['dissatisfied'].value_counts(dropna=False))
 
-plt.title('Bar Graph of Ranking of each Star Wars movie \n (lower ranking, the better the movie)')
-plt.xlabel('Star Wars movie')
-plt.ylabel('Ranked (lower rank, the better the movie)')
+#3 and 4. Using the '.pivot_table()' function to create a pivot table. It takes many parameters (see documentation). 
+#   -> The first parameter is the name of dataframe
+#   -> 'index=' represents the row headers
+#   -> 'values=' represents the column headers
+#   -> 'aggfunc=' (by default will be mean so technically no need put here but I just did it so its clear), 
+#      represents what operator to use (see documentation for list of accepted operators). Since the values are all =
+#      Boolean and Python can take Boolean values as int 1 (for True) and 0 (for False), finding mean will give
+#      us percentage of respondants that said True and False for dissatisfied, and categorized by their service_cat
+#      shown in row header in the pivot table
+dissatisfied_pivot_table = pd.pivot_table(combined_updated, index='service_cat', values='dissatisfied', aggfunc='mean')
+print(dissatisfied_pivot_table)
+```
+For Task 10, the task is to create a graph to have a visual aid for us to answer some questions of this guided project's data analysis.
 
-plt.yticks([0,1,2,3,4,5])
+We first printed out '.value_counts()' of the combined dataset to have a idea of what kind of data we are working with, noticing to show NaN values (if any).
 
-plt.savefig('bargraph_rank_each_movie.png', dpi=100)
+We now made use of Panda's '.pivot_table()' function (quite a powerful and new tool) that enabled us to apply different kinds of operators to any dataframe such as 'count', 'mean', 'sum', etc. to reveal interesting statistics of our dataframe. In this case, we wish to see the percentage of people that has True in the 'dissatisfied' column for every career group in the combined dataset. Since Python can take Boolean values True as 1 and False as 0, the mean value (under the 'pivot_table()' function) of the 'dissatisfied' column for each career group will show us the percentage of people that has True in the 'dissatisfied' column for every career group in the combined dataset.
+
+(Again, regarding technicalities of the code I will leave it to the comments in the code to explain😫)
+
+```python
+#5. Plotting the results in a bar graph
+xaxis = ['Established', 'Experienced', 'New', 'Veteran']
+#Using the new 'dissatisfied' column given to us in the pivot table as the y-axis data
+yaxis = dissatisfied_pivot_table['dissatisfied']
+
+plt.bar(xaxis, yaxis)
+
+plt.title('Bar Graph of Percentage of Resigned Dissatisfied Employees\n(by Service Category)')
+plt.xlabel('Service Category')
+plt.ylabel('Percentage of Resigned Dissatisfied Employees\n(vs other reasons for exiting the company)')
+
+plt.yticks([0,0.1,0.2,0.3,0.4,0.5,0.6])
+
+plt.savefig('bargraph(resigned_dissatisfied_employees_(by_service_category)).png', dpi=100)
 
 plt.show()
 ```
 
-![My Image](bargraph_rank_each_movie.png)
+![My Image](bargraph(resigned_dissatisfied_employees_(by_service_category)).png)
 
-For Task 5, now that we have moved on to modelling data using graphs, I imported the Matplotlib library. The task is to see which was the most highly ranked Star Wars movie. To do this, the dataset asks people to rank the movies in the columns from 1 to 6 (representing Episode 1 to 6), 1 being the best and 6 being the worst. I did this by finding the mean of each column and plotting a bar graph using the mean to find the overall ranking of each Star Wars movie of the surveyed population.
+Code for drawing the graph. (matplotlib stuffs)
 
-From the graph, we can see that 'Star Wars: Episode V The Empire Strikes Back' has the lowest mean score, which means it was ranked highly by the most people as the best Star Wars movie and 'Star Wars: Episode III Revenge of the Sith' beings the lowest ranked (with the highest mean score).
-
-Learnt how to code for plotting a bar graph in Matplotlib as demonstrated in my previous repository. (7.-NumPy-Pandas-Matplotlib-Learning-and-Practice-Python)
-
-<br>
-
-_Task 6_
-```python
-labels = ['Ep 1', 'Ep 2', 'Ep 3', 'Ep 4', 'Ep 5', 'Ep 6']
-#Using '.sum()' function works because the function treats boolean as values. (1 for True and 0 for False)
-#If worried that strings values may affect the result of '.sum()', you can convert all the string values to 0 just in vase
-values = [starwars['seen_ep1'].sum(), starwars['seen_ep2'].sum(), starwars['seen_ep3'].sum(), starwars['seen_ep4'].sum(), starwars['seen_ep5'].sum(), starwars['seen_ep6'].sum()]
-
-plt.bar(labels, values)
-
-plt.title('Bar Graph of views of each Star Wars movie')
-plt.xlabel('Star Wars movie')
-plt.ylabel('Views')
-
-plt.yticks([0,100,200,300,400,500,600,700,800])
-
-plt.savefig('bargraph_views_each_movie.png', dpi=100)
-
-plt.show()
-
-```
-
-![My Image](bargraph_views_each_movie.png)
-
-For Task 6, the task is to see which Star Wars movie has the most views out of the surveyed population. To get the views of each Star Wars movie, since the '.sum()' function treats Boolean markings, True as 1 (and False and NULL as Zero (not relevant but FYI)), by getting the sum of the columns representing each movie, the total sum represents number of people who responded True and have watched each movie.
-
-From the graph, we can see that 'Star Wars: Episode V The Empire Strikes Back' is the most viewed, while 'Star Wars: Episode III Revenge of the Sith' is the least viewed. This is may potentially be due to how well the surveyed population ranked the movie. (Ep 5 highest ranked as the best Star Wars movie, while Ep 3 lowest ranked as the worst Star Wars movie)
+From the graph, we can see that career groups 'Established' (7-10 years institute service) and 'Veteran' (more than 11 years of institute service) has the highest percentage of resignation due to dissatisfaction, while the career group 'New' (Less than 3 years of institute service) has the lowest percentage of resignation due to dissatisfaction.
 
 <br>
 
@@ -566,117 +579,149 @@ From the graph, we can see that 'Star Wars: Episode V The Empire Strikes Back' i
 
 **4. Analysing Other Aspects of the Dataset**
 
-Task 6 marked the end of the guided part of the data analysis of the Star Wars survey, and that Dataquest recommends that we try to analyse other aspects and find any interesting results from our analysis such as Does, Gender/If the person is a Star Wars fan/If the person is a Star Trek fan, affect the ranking and viewing of each Star Wars movie?
+Task 10 marked the end of the guided part of the data analysis of the Employee Exit survey, and that Dataquest recommends that we try to analyse other aspects and find any interesting results from our analysis such as 'Decide how to handle the rest of the missing values. Then, aggregate the data according to the service_cat column again. How many people in each career stage resigned due to some kind of dissatisfaction?', 'Clean the age column. How many people in each age group resgined due to some kind of dissatisfaction?' and 'Instead of analyzing the survey results together, analyze each survey separately. Did more employees in the DETE survey or TAFE survey end their employment because they were dissatisfied in some way?'
 
-In Task 7 and 7.5, I decided to see whether fans of Star Trek (Task 7) may have a different ranking of the Star Wars movies compared to those that are not fans of Star Trek (Task 7.5).
+In Task 11, I decided to see 'How many people in each age group resgined due to some kind of dissatisfaction?'
 
-_Task 7_
+_Task 11_
 ```python
-a = starwars['Do you consider yourself to be a fan of the Star Trek franchise?']
+import pandas as pd
+import matplotlib.pyplot as plt
 
-starwars.loc[a == 'Yes', 'Do you consider yourself to be a fan of the Star Trek franchise?'] = True
-starwars.loc[a == 'No', 'Do you consider yourself to be a fan of the Star Trek franchise?'] = False
-a.fillna('NaN', inplace=True)
+combined_updated = pd.read_csv('combined_updated.csv')
 
-#We can split a DataFrame into two groups based on a binary column by creating two subsets of that column.
-watched_st = starwars[a == True]
-notwatched_st = starwars[a == False]
+def main():
+    #Checking all the different types of values present in the 'age' column. (Noticed there are no NaN values as we
+    #cleared them earlier in the project already)
+    print(combined_updated['age'].value_counts(dropna=False))
+
+    #I plan to split the age groups into 6 groups:
+    #-> <21
+    #-> 21 to 30
+    #-> 31 to 40 
+    #-> 41 to 50 
+    #-> 51 to 60 
+    #-> >60
 ```
-For Task 7, the task is to get ranking of fans of Star Trek of the Star Wars movies.
+In task 11, the task is to create a graph to have a visual aid for us to answer the selected question (stated above) of this project's data analysis.
 
-This code falls under cleaning and preparing the data section (see Task 2), where I converted 'Yes' responses to the column 'Do you consider yourself to be a fan of the Star Trek franchise?' as True, while 'No' responses to False, and 'NaN' for NULL values for easier manipulation of data during modelling and analysis.
-
-Then I split the 2 groups of people (omitting those that left a NULL value) into 2 variables, 'watched_st' (watched Star Trek) and 'notwatched_st' (Not watched Star Trek)(for Task 7.5).
+We define the age groups in the commented part of the code after checking the types of values we have in the 'age' column.
 
 ```python
-labels = ['Ep 1', 'Ep 2', 'Ep 3', 'Ep 4', 'Ep 5', 'Ep 6']
-values = [watched_st['rank1'].mean(), watched_st['rank2'].mean(), watched_st['rank3'].mean(), watched_st['rank4'].mean(), watched_st['rank5'].mean(), watched_st['rank6'].mean()]
+    #Cleaning the age column (I plan to split the current values into a list and taking only the first element)
+    #First split those values with spaces and taking the first element
+    combined_updated['age'] = combined_updated['age'].str.split(' ').str[0]
+    print(combined_updated['age'].value_counts(dropna=False))
 
-plt.bar(labels, values)
-
-plt.title('Bar Graph of Ranking of each Star Wars movie \n (lower ranking, the better the movie)')
-plt.xlabel('Star Wars movie')
-plt.ylabel('Points')
-
-plt.yticks([0,1,2,3,4,5])
-
-plt.savefig('bargraph(watchedstartrek)_views_each_movie.png', dpi=100)
-
-plt.show()
+    combined_updated['age'] = combined_updated['age'].str.split('-').str[0]
+    print(combined_updated['age'].value_counts(dropna=False))
 ```
+Similar to a part of the code Task 9, we encountered unusual inputs such as '41  45' and '26-30' that we need to deal with using vectorized string methods to get the desired input (of a single float).
 
-![My Image](bargraph(watchedstartrek)_rank_each_movie.png)
+```python
+    #Making the data type of the 'age' column into floats
+    combined_updated['age'] = combined_updated['age'].astype(float)
+```
+Converting the data type of the 'age' column from object to float after dealing with the unusual inputs.
 
-Getting of the data for fans of Star Trek for the bar graph similar to data modelling and analysis (see Task 5) on taking the mean for the ranking score of each Star Wars movie column.
+```python
+    #Creating a function and mapping it to the 'age' column to split the respondants to different age groups and 
+    #assigning the age groups to an 'age_group' column
+    combined_updated['age_group'] = combined_updated['age'].apply(age_group)
+    print(combined_updated['age_group'].value_counts(dropna=False))
+    print(combined_updated.head(5))
+```
+Similar to Task 9 again, creating a self-made function 'age_group' and later applying to the 'age' column using '.apply()' to split each element'respondant to an age group while creating a new 'age_group' column in the combined dataset.
 
-This graph shows the ranking by fans of Star Trek of the Star Wars movies.
+```python
+    #Plotting out the results in a bar graph
+    #5. Plotting the results in a bar graph
+    xaxis = ['21 to 30', '31 to 40', '41 to 50', '51 to 60', '<21', '>60']
+
+    #Creating a pivot table and using the new 'dissatisfied' column given to us in the pivot table as the 
+    #y-axis data
+    dissatisfied_pivot_table = pd.pivot_table(combined_updated, index='age_group', values='dissatisfied', aggfunc='count')
+    print(dissatisfied_pivot_table)
+    yaxis = dissatisfied_pivot_table['dissatisfied']
+```
+Similar to task 10, making use of Panda's '.pivot_table()' function and passing the 'count' operator this time (instead of 'mean' in task 10) to obtain the count of number of resignation due to dissatisfaction per age group.
+
+Then using the count number of resignation due to dissatisfaction per age group obtained from the pivot table as data for the y-axis of the bar graph later.
+
+```python
+    plt.bar(xaxis, yaxis)
+
+    plt.title('Bar Graph of Number of Resigned Dissatisfied Employees\n(by Age Group)')
+    plt.xlabel('Age Group')
+    plt.ylabel('Number of Resigned Dissatisfied Employees')
+
+    plt.yticks([0,20,40,60,80,100,120,140,160,180])
+
+    plt.savefig('bargraph(number_of_dissatisfied_employees_(by_age_group)).png', dpi=100)
+
+    plt.show()
+```
+![My Image](bargraph(resigned_dissatisfied_employees_(by_service_category)).png)
+
+Code for drawing the graph. (matplotlib stuffs)
+
+From the graph, we can see that age group of '41-50' has the highest number of resignation due to dissatisfaction among all the age groups, with '<21' and '>60', the extreme ends of the age group having the least number of resignation due to dissatisfaction. 
+
+```python
+#Creating the age_group function
+def age_group(val):
+    if val < 21:
+        return '<21'
+    elif val >= 21 and val <= 30:
+        return '21 to 30'
+    elif val >= 31 and val <= 40:
+        return '31 to 40'
+    elif val >= 41 and val <= 50:
+        return '41 to 50'
+    elif val >= 51 and val <= 60:
+        return '51 to 60'
+    elif val > 60:
+        return '>60'
+
+main()
+```
+This is how the self-made function 'age_group' look like at the end of the code for earlier, quite similar to the self-made function 'career_group' from Task 9 and 'update_val' in Task 7.
 
 <br>
 
-_Task 7.5_
-```python
-a = starwars['Do you consider yourself to be a fan of the Star Trek franchise?']
+_Analysis of Task 10 bar graph_
+A possible reason I can think of for why a higher percentage of respondants that have had longer institute service resigned due to some sort of dissatisfaction is that it gets boring doing the same job for so many years due to same tasks, people and environment everyday, and disagreements may build up. While those with shorter institute service still have much to learn and that since they worked hard to be able to join the institute, and everything may seem more exciting and new for them to learn that they are more unlikely to leave at an early stage.
 
-starwars.loc[a == 'Yes', 'Do you consider yourself to be a fan of the Star Trek franchise?'] = True
-starwars.loc[a == 'No', 'Do you consider yourself to be a fan of the Star Trek franchise?'] = False
-a.fillna('NaN', inplace=True)
 
-#We can split a DataFrame into two groups based on a binary column by creating two subsets of that column.
-watched_st = starwars[a == True]
-notwatched_st = starwars[a == False]
-```
-Exact same code as in Task 7, analysing of this code under Task 7.
+_Analysis of Task 11 bar graph_
+I feel there might be many reasons for the trend.
 
-```python
-labels = ['Ep 1', 'Ep 2', 'Ep 3', 'Ep 4', 'Ep 5', 'Ep 6']
-values = [notwatched_st['rank1'].mean(), notwatched_st['rank2'].mean(), notwatched_st['rank3'].mean(), notwatched_st['rank4'].mean(), notwatched_st['rank5'].mean(), notwatched_st['rank6'].mean()]
+One reason could be poor dataset as there are fewer respondants doing the surveys under the extreme age groups of <21 and >60 hence lower number of people under these age group indicating resignation by dissatisfaction. (haven't really checked the datasets fully, may be proven wrong)
 
-plt.bar(labels, values)
+Another reason (provided the dataset is good and spread among the age groups evenly), is that younger people (<21) may find the workplace new and are learning a lot and are obviously won't resign so early immdiately after getting a job. While older people (>60) may have spent many years on the job and the fact that they have spent so many years on that job may show it is very satisfactory for them and are hence also more unlikely to resign from the job due to dissatisfaction.
 
-plt.title('Bar Graph of Ranking of each Star Wars movie \n (lower ranking, the better the movie)')
-plt.xlabel('Star Wars movie')
-plt.ylabel('Points')
-
-plt.yticks([0,1,2,3,4,5])
-
-plt.savefig('bargraph(notwatchedstartrek)_rank_each_movie.png', dpi=100)
-
-plt.show()
-```
-
-![My Image](bargraph(notwatchedstartrek)_rank_each_movie.png)
-
-Getting of the data for those who are not fans of Star Trek for the bar graph similar to data modelling and analysis (see Task 5) on taking the mean for the ranking score of each Star Wars movie column.
-
-This graph shows the ranking by those who are not fans of Star Trek of the Star Wars movies.
-
-<br>
-
-_Analysis of Task 7 and Task 7.5 bar graphs_
-
-General ranking of the Star Wars movies by fans and those who are not fans of Star Trek are the same. However, there is a pattern of the difference between the ranking of the top 3 Star Wars movies and the bottom 3 being more significant for those who are fans of Star Trek and those who are not fans of Star Trek (could this be that fans of Star Trek prefer watching the Star Wars movies 4, 5 and 6 more than those who aren't Star Trek fans due to similarities of movies 4, 5, 6 and Star Trek movies?)
+Meanwhile, higher number resign due to dissatisfaction at the from 30 to 50s due to boredom from working at a job they dislike after a while or maybe they are able to find other jobs suitable for their skillset and can switch jobs more easily hence are less tolerable to dissatisfaction as they have more freedom to choose from the younger age groups.
 
 <br>
 
 <br>
 
 ## Thoughts after the project
-This is my first time analysing data using a programming language. I ran into many bugs working with the Star Wars survey dataset such as manipulating of the columns and rows, data type of the values, and how to extract data that I need for analysis. By solving these bugs, I feel that I have learnt a lot and would be able to cleaning, extracting and analysing data much more smoothly with other datasets.
+Urghhhhhhhhhh I almost reached 1000 lines in this readme file... Will probably shorten this next time, wayyyyyyyy too much typing.
 
-I initially started by previous repository (7.-NumPy-Pandas-Matplotlib-Learning-and-Practice-Python) and learning of NumPy, Pandas and Matplotlib with making a data analysis project as 1 of the goals, glad that I was able to somewhat complete (even though there can still be much improvements) it.
+I feel that this project definitely expanded my tool box for data analysis through discovering newer and powerful functions such as '.pivot_table()' and '.apply()'.
 
-I spent most of my time on figuring out the right commands and fixing bugs at the cleaning and extracting stage and much less time on the drawing the graphs and analysing the data. I believe this is quite normal in the process of analysing data?
+Through talking with other programmers, I've learnt that at my current stage of coding I would like to keep exploring the different aspects of programming such as using other more complex libraries such as TensorFlow, Scikit-learn and PyTorch for machine learning, neural network, making backend/frontend/full stack websites and not to stick to one for now. 
+
+I believe that I will be moving on to projects of a different nature in the next one, or to more learning journey repositories such as understanding more on different Algorithms and Data Structures.
 
 <br>
 
 To be improved:
-* Some of my codes are quite repetitive, loops/other commands can definitely shorten them.
-* Can try to use correlation while analysing the data to find some interesting results.
-* Can try working/analysing the data of other columns of the dataset such as 'Education', 'Location (Census Region)', and 'Which character shot first?' to find any interesting patterns to even more completely analyse this Star Wars survey dataset.
-* Can try working/analysing the data from columns 15 to 29 (after cleaning the data) as well, which contain data on the characters respondents view favorably and unfavorably to find answers for questions such as 'Which character do respondents like the most?', 'Which character do respondents dislike the most?' and 'Which character is the most controversial (split between likes and dislikes)?'
+* I might stop making this section in the future as there will always be more and more things to be improved the more you look at your code and the list will be endless. One quick one is I haven't tried figure out how to align the x-axis of both graphs in ascending order for the career group and age group. But I believe this can be a quick fix with a quick google search.
 
 <br>
 
 Have a gif:
 
-![Semantic description of image](https://media.tenor.com/VdIKn05yIh8AAAAM/cat-sleep.gif)
+![Semantic description of image](https://media.tenor.com/UF-BaBGD1o0AAAAd/wait-for-it-cats.gif)
