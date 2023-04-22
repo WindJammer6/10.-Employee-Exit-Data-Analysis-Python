@@ -661,7 +661,7 @@ Then using the count number of resignation due to dissatisfaction per age group 
 
     plt.show()
 ```
-![My Image](bargraph(resigned_dissatisfied_employees_(by_service_category)).png)
+![My Image](bargraph(number_of_dissatisfied_employees_(by_age_group)).png)
 
 Code for drawing the graph. (matplotlib stuffs)
 
