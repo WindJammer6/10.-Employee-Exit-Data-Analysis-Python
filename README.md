@@ -35,7 +35,7 @@ The Dataquest website provides some guidance and provides the tasks in order to 
 
 I have transferred the tasks from the website as instructions into my respective code files.
 
-Took reference from another sample attempt on the guided question in the Dataquest guide community discussion. Some of my code (that are labelled 'Copied from online) are from this sample. (in source(s))
+Took reference from another sample attempt on the guided question in the Dataquest guide community discussion. Some of my code (labelled in comment 'Copied from online') are from this sample. (in source(s))
 
 Source(s): https://app.dataquest.io/c/60/m/348/guided-project%3A-clean-and-analyze-employee-exit-surveys/1/introduction (Dataquest (main project guide)), https://community.dataquest.io/t/guided-project-clean-and-analyze-employee-exit-surveys-by-feelingcxld/568982 (Dataquest sample attempt from the community discussion page)
 
