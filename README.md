@@ -692,10 +692,13 @@ This is how the self-made function 'age_group' look like at the end of the code 
 <br>
 
 _Analysis of Task 10 bar graph_
+
 A possible reason I can think of for why a higher percentage of respondants that have had longer institute service resigned due to some sort of dissatisfaction is that it gets boring doing the same job for so many years due to same tasks, people and environment everyday, and disagreements may build up. While those with shorter institute service still have much to learn and that since they worked hard to be able to join the institute, and everything may seem more exciting and new for them to learn that they are more unlikely to leave at an early stage.
 
+<br>
 
 _Analysis of Task 11 bar graph_
+
 I feel there might be many reasons for the trend.
 
 One reason could be poor dataset as there are fewer respondants doing the surveys under the extreme age groups of <21 and >60 hence lower number of people under these age group indicating resignation by dissatisfaction. (haven't really checked the datasets fully, may be proven wrong)
