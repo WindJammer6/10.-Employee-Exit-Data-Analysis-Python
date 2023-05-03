@@ -103,7 +103,7 @@ tafe_survey_updated.to_csv('tafe_survey2.csv', index=False)
 ```
 Loaded edited dataset into a new file so I can load it into the next code file. And so I can view the dataset as a whole as VS Code dosen't allow me to see the full thing in its terminal. 
 
-As stated in the comment in the code, to prevent new indexes from being added into the dataset everytime a new copy of the dataset is made, in this task and all the other tasks I included the 'index=False' parameter in the '.to_csv()' function.
+As stated in the comment in the code, to prevent from new indexes from keep being added into the dataset, in this task and all the other tasks I included the 'index=False' parameter in the '.to_csv()' function.
 
 <br>
 
