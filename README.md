@@ -19,17 +19,31 @@ For this Employee Exit Data Analysis Project, we will answer in the guided aspec
 Computer program used for coding: VS Code
 
 ## Repository directory description:
-Let's start with:
-1. Sources and Context
-2. Cleaning and Preparing Data
-3. Data Modelling and Analysis
-4. Analysing Other Aspects of the Dataset
++ [Code Description](#codedescription)
+    1. [Sources and Context](#sourcesandcontext)
+    2. [Cleaning and Preparing Data](#cleaningandpreparingdata)
+        1. [Task 1](#task1)
+        2. [Task 2](#task2)
+        3. [Task 3](#task3)
+        4. [Task 4](#task4)
+        5. [Task 5](#task5)
+        6. [Task 6](#task6)
+        7. [Task 7](#task7)
+        8. [Task 8](#task8)
+        9. [Task 9](#task9)
+    3. [Data Modelling and Analysis](#datamodellingandanalysis)
+        1. [Task 10](#task10)
+    5. [Analysing Other Aspects of the Dataset](#analysingother)
+        1. [Task 11](#task11)
++ [Thoughts after the project](#thoughts)
 
 <br>
 
 <br>
 
-**1. Sources and Context**
+## Code Description <a name = "codedescription"></a>
+
+### 1. Sources and Context <a name = "sourcesandcontext"></a>
 
 The Dataquest website provides some guidance and provides the tasks in order to analyse some of the data in the dataset. The 'Employeeexit_data_analysis_project' folder is organised to tasks from the website. '1.Task1.py' to '9.Task9.py' is on Cleaning and Preparing the data while '10.Task10.py' is on Data Modelling and Analysis. '11.Task11.py' is to analyse another aspect of data from the dataset.
 
@@ -45,9 +59,9 @@ Datasets analysed [here](https://github.com/plasmagirl/Clean-And-Analyze-Employe
 
 <br>
 
-**2.Cleaning and Preparing Data**
+### 2. Cleaning and Preparing Data <a name = "cleaningandpreparingdata"></a>
 
-_Task 1_
+#### _Task 1_ <a name = "task1"></a>
 ```python
 import pandas as pd
 
@@ -71,7 +85,7 @@ To print out the dete_survey and tafe_survey datasets out for checking. Used the
 
 <br>
 
-_Task 2_
+#### _Task 2_ <a name = "task2"></a>
 ```python
 import pandas as pd
 
@@ -107,7 +121,7 @@ As stated in the comment in the code, to prevent new indexes from being added in
 
 <br>
 
-_Task 3_
+#### _Task 3_ <a name = "task3"></a>
 ```python
 import pandas as pd
 
@@ -175,7 +189,7 @@ The Dataquest guide provide the desired column titles for the tafe_survey which 
 
 <br>
 
-_Task 4_
+#### _Task 4_ <a name = "task4"></a>
 ```python
 import pandas as pd
 
@@ -203,7 +217,7 @@ From '.value_counts()' function we can see there is only 1 type of resignation i
 
 <br>
 
-_Task 5_
+#### _Task 5_ <a name = "task5"></a>
 ```python
 import pandas as pd
 
@@ -265,7 +279,7 @@ To tackle the wrong data type, we use the '.astype()' function to convert the da
 
 <br>
 
-_Task 6_
+#### _Task 6_ <a name = "task6"></a>
 ```python
 import pandas as pd
 
@@ -285,7 +299,7 @@ We do this by subtracting the 'dete_start_date' inputs from the 'cease_date' inp
 
 <br>
 
-_Task 7_
+#### _Task 7_ <a name = "task7"></a>
 ```python
 import pandas as pd
 import numpy as np
@@ -367,7 +381,7 @@ There is no need to change the elements for the factors (columns) (that we deem 
 
 <br>
 
-_Task 8_
+#### _Task 8_ <a name = "task8"></a>
 ```python
 import pandas as pd
 
@@ -426,7 +440,7 @@ Now, we try to make the new combined dataset cleaner by removing any rows that c
 
 <br>
 
-_Task 9_
+#### _Task 9_ <a name = "task9"></a>
 ```python
 import pandas as pd
 
@@ -509,13 +523,13 @@ This is how the self-made function 'career_stage' look like, quite similar to th
 
 <br>
 
-**3. Data Modelling and Analysis**
+### 3. Data Modelling and Analysis <a name = "datamodellingandanalysis"></a>
 
 Up till now, the cleaning and preparing of the data will enable us to do some data analysis via looking at the patterns of the graphs and answer some questions about the Employee Exit surveys. In my code, I will be exploring questions like 'Are employees who only worked for the institutes for a short period of time resigning due to some kind of dissatisfaction? What about employees who have been there longer?' and 'Are younger employees resigning due to some kind of dissatisfaction? What about older employees?' (Task 10)
 
 For visualisation, I drew a bar graph of percentage of resigned employees due to dissatisfaction (vs other reasons for exit) for each defined career stage. (Task 10)
 
-_Task 10_
+#### _Task 10_ <a name = "task10"></a>
 ```python
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -579,13 +593,13 @@ From the graph, we can see that career groups 'Established' (7-10 years institut
 
 <br>
 
-**4. Analysing Other Aspects of the Dataset**
+### 4. Analysing Other Aspects of the Dataset <a name = "analysingother"></a>
 
 Task 10 marked the end of the guided part of the data analysis of the Employee Exit survey, and that Dataquest recommends that we try to analyse other aspects and find any interesting results from our analysis such as 'Decide how to handle the rest of the missing values. Then, aggregate the data according to the service_cat column again. How many people in each career stage resigned due to some kind of dissatisfaction?', 'Clean the age column. How many people in each age group resgined due to some kind of dissatisfaction?' and 'Instead of analyzing the survey results together, analyze each survey separately. Did more employees in the DETE survey or TAFE survey end their employment because they were dissatisfied in some way?'
 
 In Task 11, I decided to see 'How many people in each age group resgined due to some kind of dissatisfaction?'
 
-_Task 11_
+#### _Task 11_ <a name = "task11"></a>
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -711,7 +725,7 @@ Meanwhile, higher number resign due to dissatisfaction at the from 30 to 50s due
 
 <br>
 
-## Thoughts after the project
+## Thoughts after the project <a name = "thoughts"></a>
 Urghhhhhhhhhh I almost reached 1000 lines in this readme file... Will probably shorten this next time, wayyyyyyyy too much typing.
 
 I feel that this project definitely expanded my tool box for data analysis through discovering newer and powerful functions such as '.pivot_table()' and '.apply()'.
