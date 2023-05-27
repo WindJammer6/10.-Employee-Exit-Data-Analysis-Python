@@ -18,7 +18,7 @@ For this Employee Exit Data Analysis Project, we will answer in the guided aspec
 
 Computer program used for coding: VS Code
 
-## Repository directory description:
+## Table of Contents:
 + [Code Description](#codedescription)
     1. [Sources and Context](#sourcesandcontext)
     2. [Cleaning and Preparing Data](#cleaningandpreparingdata)
